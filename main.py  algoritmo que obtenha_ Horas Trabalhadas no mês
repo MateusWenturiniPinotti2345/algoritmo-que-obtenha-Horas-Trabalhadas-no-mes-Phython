@@ -1,0 +1,23 @@
+#Crie um algoritmo que obtenha:
+#Horas Trabalhadas no mes, Salário Hora
+#A partir desses dados retorne:
+#Salário Bruto Total do mês - SalBruto=(HrTrab*SalHora)
+#Desconto de INSS (8% do Salário Total) - Inss=(SalBruto*8)/100
+#Contribuição Sindical (5% do Salário Total) - ContSind=(SalBruto*5)/100
+#Total de Descontos - TotDesc=SalBruto-(Inss+ContSind)
+#Salário Líquido - SalLiq = SalBruto-TotDesc
+
+SalBruto = 0
+Hrtrab = float(input('Digite a horas trbalhadas: '))
+SalHora =float(input("Digite o valor por hora trabalhada: ")) 
+SalBruto = (Hrtrab*SalHora)
+Inss = (Hrtrab* SalHora)
+ContSind=(SalBruto*5)/100
+totDesc = Inss + ContSind
+Saliq = SalBruto - totDesc 
+
+print("Salario bruto: ", SalBruto )
+print("INSS: ", Inss)
+print("Contribuição Sindical: ",ContSind)
+print("Total de Descontos: ",totDesc)
+print("Salario liquido: ", Saliq)
